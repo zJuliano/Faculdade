@@ -1,1 +1,49 @@
-/* Ainda não foi feito */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #1a1a1a;
+    --secondary: #d4af37;
+    --accent: #9b8f8f;
+    --light: #333;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: var(--light);
+    color: var(--primary);
+    line-height: 1.6;
+    overflow-x: hidden; /* impede que o conteúdo da página seja rolado horizontalmente */
+}
+
+h1, h2, h3, h4 {
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px; /* aumenta o espaçamento entre as letras dos textos dos elementos selecionados */
+}
+
+.container {
+    width: 90%; /* faz o container ocupar 90% da largura da tela. */
+    max-width: 1200px; /* limita o tamanho máximo do container a 1200 pixels, evitando que fique muito largo em telas grandes. */
+    margin: 0 auto; /* centraliza o container horizontalmente na página. */
+    padding: 0 20px; /* adiciona um espaçamento interno de 20 pixels apenas nas laterais esquerda e direita */
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--secondary);
+    color: var(--primary);
+    padding: 12px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 10px; /* Deixa os cantos do elemento arrendados */
+    transition: all 0.3s ease; /* serve para criar animações suaves quando algum estilo do elemento muda.
+    -  all: todas as propriedades que mudarem (exemplo: cor, tamanho, borda).
+    - 0.3s: a animação dura 0.3 segundos.
+    - ease: a velocidade começa devagar, acelera no meio e termina devagar. */
+}
